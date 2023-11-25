@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,6 @@
     <style>
     .swiper {
         width: 600px;
-        height: 300px;
     }
     .swiper-slide img { max-width: 100%; }
     </style>
@@ -23,11 +22,13 @@
     <div class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><img src="https://cdn.iportal.ru/preview/news/articles/5f34cdf190738ab492d5db50119a33450fdad037_1332_888_c.jpg.webp-portal" alt=""></div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        ...
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/3.jpg" alt=""></div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -42,25 +43,26 @@
 
     <script>
         const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 3,
 
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
 
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
 
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
         });
     </script>
 
